@@ -67,7 +67,7 @@
   <div class="container" style="max-width:800px">
     <article>
       <h1>TG账号登录失败常见原因与对应修复方案</h1>
-      <div style="color:#5F6368;font-size:14px;margin-bottom:28px">
+      <div class="article-meta">
         <span>分类：登录失败排查</span> · <span>更新：2026年6月18日</span>
       </div>
 
@@ -77,7 +77,7 @@
       </div>
 
 
-      <p style="font-size:17px;line-height:1.9;color:#3C4043;margin-bottom:24px">统计数据显示，Telegram用户中约35%曾遇到登录失败，其中超过60%的人看到错误代码后不知道如何处理。FLOOD_WAIT、NETWORK_ERROR、PHONE_NUMBER_BANNED……这些英文代码看着一头雾水，但每个代码背后都有明确的含义和对应的解决办法。本文将逐一解读所有常见错误代码，并给出Android和iOS双平台的详细修复步骤。</p>
+      <p class="lead-paragraph">统计数据显示，Telegram用户中约35%曾遇到登录失败，其中超过60%的人看到错误代码后不知道如何处理。FLOOD_WAIT、NETWORK_ERROR、PHONE_NUMBER_BANNED……这些英文代码看着一头雾水，但每个代码背后都有明确的含义和对应的解决办法。本文将逐一解读所有常见错误代码，并给出Android和iOS双平台的详细修复步骤。</p>
 
       <p style="font-size:15px;line-height:1.8;color:#5F6368;margin-bottom:20px"><strong>本文目录：</strong><br>
         ① 常见登录失败错误代码解读 → ② 按错误类型分类修复 → ③ 分步操作指南 → ④ 注意事项 → ⑤ 常见问题</p>
@@ -88,14 +88,14 @@
       <p><strong>含义</strong>：你短时间内尝试登录太频繁，Telegram暂时限制了你的请求。这是最常见的错误之一，通常发生在反复点击登录按钮或多次重发验证码之后。</p>
       <p><strong>修复</strong>：页面通常会显示一个等待秒数（比如FLOOD_WAIT_120表示等120秒）。等够时间后再尝试登录，期间不要反复点击。如果等完还是报这个错，再等一轮，每轮间隔加长。</p>
       <p><strong>Android具体操作</strong>（Telegram Android 10.14.0）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <ol>
         <li>看到FLOOD_WAIT提示后，记下等待秒数</li>
         <li>按Home键回到桌面，不要关闭Telegram</li>
         <li>等待指定时间（建议多等30秒余量）</li>
         <li>重新打开Telegram，再次点击登录</li>
       </ol>
       <p><strong>iOS具体操作</strong>（Telegram iOS 10.14.1）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <ol>
         <li>记录FLOOD_WAIT后面的等待秒数</li>
         <li>上滑回到桌面，保持Telegram在后台</li>
         <li>等待足够时间后重新打开Telegram点击登录</li>
@@ -133,28 +133,34 @@
 
       <h2>三、分步操作指南：从错误代码到解决</h2>
 
-      <h3>步骤1：确认错误代码</h3>
-      <p>如果你看到的只是「登录失败」四个字，没有具体错误代码，可能是Telegram版本过旧。Android用户打开Google Play检查更新，iOS用户去App Store更新。Telegram Android 10.14.0及以上版本会显示详细的错误信息。</p>
-
-      <h3>步骤2：根据错误类型执行对应修复</h3>
-      <p>参照上面第二部分的分类，执行对应操作。网络类错误按步骤逐步排查；频率限制类耐心等待；账号类发邮件申诉；格式类仔细检查号码。</p>
-
-      <h3>步骤3：确认Telegram版本和系统版本</h3>
-      <p>部分错误在旧版本中频繁出现，Telegram官方会持续修复已知问题。确认你使用的是最新版本：</p>
+      <div class="step-box" data-step="1">
+        <h4>确认错误代码</h4>
+        <p>如果你看到的只是「登录失败」四个字，没有具体错误代码，可能是Telegram版本过旧。Android用户打开Google Play检查更新，iOS用户去App Store更新。Telegram Android 10.14.0及以上版本会显示详细的错误信息。</p>
+      </div>
+<div class="step-box" data-step="2">
+        <h4>根据错误类型执行对应修复</h4>
+        <p>参照上面第二部分的分类，执行对应操作。网络类错误按步骤逐步排查；频率限制类耐心等待；账号类发邮件申诉；格式类仔细检查号码。</p>
+      </div>
+<div class="step-box" data-step="3">
+        <h4>确认Telegram版本和系统版本</h4>
+        <p>部分错误在旧版本中频繁出现，Telegram官方会持续修复已知问题。确认你使用的是最新版本：</p>
       <p><strong>Android</strong>：打开Telegram → 左上角菜单 → 设置 → 版本号显示在页面底部。如低于10.14.0建议更新。</p>
       <p><strong>iOS</strong>：打开Telegram → 设置 → 版本号在底部。如低于10.14.1建议更新。</p>
-
-      <h3>步骤4：重启手机后重试</h3>
-      <p>有些网络层面的状态异常，重启手机能解决。特别是修改DNS、切换网络后，重启可以确保所有网络配置生效。</p>
-
-      <h2>四、注意事项</h2>
-      <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
+      </div>
+<div class="step-box" data-step="4">
+        <h4>重启手机后重试</h4>
+        <p>有些网络层面的状态异常，重启手机能解决。特别是修改DNS、切换网络后，重启可以确保所有网络配置生效。</p>
+      </div>
+<h2>四、注意事项</h2>
+      <ul>
         <li>遇到FLOOD_WAIT一定不要反复重试，越试等待时间越长</li>
         <li>手机号被封不代表你的手机有问题，换个号注册新账号也行</li>
         <li>如果是刚卸载重装后登录失败，等待几分钟再试，服务器端可能还没完全注销旧会话</li>
         <li>向recover@telegram.org发邮件时，邮件主题建议写「Recover Phone Number +86xxxxxxxxxxx」，正文简要说明情况即可</li>
         <li>ACCOUNT_DISABLED与PHONE_NUMBER_BANNED不同，前者是账号被禁用，后者是号码被封，但申诉邮箱相同</li>
       </ul>
+
+      <div class="divider-text"><span>还有问题？</span></div>
 
       <h2>五、常见问题</h2>
       <div style="background:#f8f9fa;border-radius:12px;padding:24px;margin:16px 0">
