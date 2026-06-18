@@ -52,3 +52,50 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+// Article TOC Generator - auto-generates TOC from H2/H3 headings
+(function() {
+  function generateTOC() {
+    var articleBody = document.querySelector(".article-body");
+    if (!articleBody) return;
+
+    // Find all H2 and H3 headings
+    var headings = articleBody.querySelectorAll("h2, h3");
+    if (headings.length < 2) return; // Don't show TOC if less than 2 headings
+
+    // Find the TOC container (try multiple IDs)
+    var tocList = document.querySelector('.article-toc ul') || document.querySelector('#toc-list');
+    if (!tocList) return;
+
+    // Ensure all headings have IDs
+    headings.forEach(function(h, idx) {
+      if (!h.id) {
+        h.id = "heading-" + idx;
+      }
+    });
+
+    // Generate TOC items
+    headings.forEach(function(h) {
+      var li = document.createElement("li");
+      li.className = h.tagName.toLowerCase();
+      var a = document.createElement("a");
+      a.href = "#" + h.id;
+      a.textContent = h.textContent.replace(/^[^a-zA-Z0-9一-龥]*/, "").trim();
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+
+    // Show the TOC
+    document.querySelector(".article-toc").style.display = "block";
+  }
+
+  // Run on article pages
+  if (document.querySelector(".article-body")) {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", generateTOC);
+    } else {
+      generateTOC();
+    }
+  }
+})();
