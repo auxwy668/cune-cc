@@ -369,3 +369,259 @@ footer { background: var(--gray-900); color: rgba(255,255,255,.8); padding: 48px
   .features { padding: 60px 0; }
 }
 
+/* ===== CPA Download Banner (首页) ===== */
+.cpa-banner {
+  background: linear-gradient(135deg, #1565C0 0%, #0288D1 50%, #00BCD4 100%);
+  padding: 28px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cpa-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -20%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.cpa-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+.cpa-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+}
+.cpa-banner-icon {
+  width: 56px; height: 56px;
+  background: rgba(255,255,255,.15);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cpa-banner-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.cpa-banner-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,.75);
+}
+.cpa-banner-btns {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+.cpa-btn-win, .cpa-btn-android, .cpa-btn-ios, .cpa-btn-mac {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all .2s;
+  color: #fff;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.3);
+}
+.cpa-btn-win:hover, .cpa-btn-android:hover, .cpa-btn-ios:hover, .cpa-btn-mac:hover {
+  background: #fff;
+  color: var(--blue) !important;
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,.2);
+}
+
+/* ===== CPA Article Download Card (文章页) ===== */
+.cpa-article-card {
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+  border: 2px solid var(--blue);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin: 32px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cpa-article-card::before {
+  content: '';
+  position: absolute;
+  top: -30px; right: -30px;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, rgba(33,150,243,.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.cpa-ac-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.cpa-ac-icon {
+  width: 52px; height: 52px;
+  background: var(--blue);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.cpa-ac-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+.cpa-ac-sub {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 2px;
+}
+.cpa-ac-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.cpa-ac-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all .2s;
+  color: #fff;
+}
+.cpa-ac-win { background: #0078D4; }
+.cpa-ac-android { background: #3DDC84; color: #1a1a1a; }
+.cpa-ac-ios { background: #333; }
+.cpa-ac-mac { background: #555; }
+.cpa-ac-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  color: #fff;
+}
+.cpa-ac-android:hover { color: #1a1a1a; }
+.cpa-ac-safe {
+  font-size: 13px;
+  color: #388E3C;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ===== CPA Sticky Bar (吸底下载条) ===== */
+.cpa-sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 2px solid var(--blue);
+  box-shadow: 0 -4px 20px rgba(0,0,0,.12);
+  z-index: 9999;
+  padding: 0;
+  animation: slideUp .4s ease;
+}
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.cpa-sticky-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cpa-sticky-info {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.cpa-sticky-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+.cpa-sticky-label {
+  font-size: 12px;
+  color: var(--green);
+  font-weight: 600;
+}
+.cpa-sticky-btns {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+.cpa-sticky-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--blue);
+  color: #fff !important;
+  transition: all .2s;
+}
+.cpa-sticky-btn:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+.cpa-sticky-android { background: #3DDC84; color: #1a1a1a !important; }
+.cpa-sticky-android:hover { background: #2fc76e; }
+.cpa-sticky-ios { background: #333; }
+.cpa-sticky-ios:hover { background: #555; }
+.cpa-sticky-close {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  width: 28px; height: 28px;
+  font-size: 14px;
+  color: var(--text-light);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all .2s;
+}
+.cpa-sticky-close:hover {
+  background: var(--gray-100);
+  color: var(--gray-800);
+}
+
+/* CPA Responsive */
+@media (max-width: 900px) {
+  .cpa-banner-inner { flex-direction: column; text-align: center; }
+  .cpa-banner-left { flex-direction: column; }
+  .cpa-banner-btns { justify-content: center; }
+}
+@media (max-width: 600px) {
+  .cpa-ac-btns { flex-direction: column; }
+  .cpa-ac-btn { justify-content: center; }
+  .cpa-sticky-inner { flex-wrap: wrap; gap: 8px; }
+  .cpa-sticky-btns { flex-wrap: wrap; }
+  .cpa-sticky-btn { padding: 6px 14px; font-size: 12px; }
+  .cpa-sticky-info { width: 100%; flex-direction: row; justify-content: space-between; align-items: center; }
+  .cpa-sticky-close { position: absolute; top: 8px; right: 16px; }
+  .cpa-sticky-inner { position: relative; padding-right: 48px; }
+}
+
