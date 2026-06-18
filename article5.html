@@ -48,7 +48,7 @@
   <div class="container" style="max-width:800px">
     <article>
       <h1>Telegram频繁掉线、异地登录验证常见问题汇总</h1>
-      <div style="color:#5F6368;font-size:14px;margin-bottom:28px"><span>分类：登录常见FAQ</span> · <span>更新：2026年6月18日</span></div>
+      <div class="article-meta"><span>分类：登录常见FAQ</span> · <span>更新：2026年6月18日</span></div>
 
       <div class="article-toc">
         <h2>文章目录</h2>
@@ -56,7 +56,7 @@
       </div>
 
 
-      <p style="font-size:17px;line-height:1.9;color:#3C4043;margin-bottom:24px">统计数据显示，Telegram用户反馈的非登录类问题中，约40%与频繁掉线有关，25%与异地登录重新验证有关，还有15%涉及客户端崩溃闪退。这类问题虽然不像转圈那样完全无法使用，但频繁发生极其影响体验——聊天聊到一半断线、出差到了新城市就要重新收验证码、App用着用着就闪退……这篇文章把这三类高频问题一次性讲清楚，每类问题都给出Android和iOS双平台的详细操作。</p>
+      <p class="lead-paragraph">统计数据显示，Telegram用户反馈的非登录类问题中，约40%与频繁掉线有关，25%与异地登录重新验证有关，还有15%涉及客户端崩溃闪退。这类问题虽然不像转圈那样完全无法使用，但频繁发生极其影响体验——聊天聊到一半断线、出差到了新城市就要重新收验证码、App用着用着就闪退……这篇文章把这三类高频问题一次性讲清楚，每类问题都给出Android和iOS双平台的详细操作。</p>
 
       <h2>一、Telegram频繁掉线</h2>
 
@@ -64,7 +64,7 @@
       <p>聊天过程中突然显示「连接中」，消息发不出去，过一会儿又自动恢复。有时一天发生好几次，严重影响沟通效率。</p>
 
       <h3>1.2 成因分析</h3>
-      <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
+      <ul>
         <li><strong>网络不稳定</strong>——WiFi或移动数据信号波动，导致与Telegram服务器的连接反复中断</li>
         <li><strong>后台被系统杀掉</strong>——Android手机的省电模式会主动结束Telegram后台进程，导致推送中断</li>
         <li><strong>App版本过旧</strong>——旧版本的连接保活逻辑存在缺陷，在新系统上容易断连</li>
@@ -76,7 +76,7 @@
 
       <p><strong>修复1：将Telegram加入省电白名单</strong></p>
       <p><strong>Android</strong>（以Android 14为例）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <ol>
         <li>打开「设置」→「电池」</li>
         <li>点击「电池优化」或「省电模式设置」</li>
         <li>在应用列表中找到「Telegram」</li>
@@ -103,7 +103,7 @@
       <p>这是Telegram的安全机制。检测到你的登录IP地址跟之前差别很大时，会要求重新验证手机号，防止别人盗号。如果你频繁更换城市或使用不同网络，可能会反复触发这个机制。</p>
 
       <h3>2.3 分步处理</h3>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <ol>
         <li>正常接收验证码完成验证即可</li>
         <li>如果收不到验证码，参考<a href="article3.html">验证码收不到解决教程</a></li>
         <li>验证完成后，Telegram会记住新的登录位置，短期内不会再次要求验证</li>
@@ -122,7 +122,7 @@
       <p>打开Telegram后闪退回桌面，或者使用过程中突然崩溃。反复重启App也无效。</p>
 
       <h3>3.2 成因分析</h3>
-      <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
+      <ul>
         <li><strong>缓存损坏</strong>——存储空间不足或异常断电导致缓存文件损坏</li>
         <li><strong>App版本与系统不兼容</strong>——旧版Telegram在新系统上可能存在兼容性问题</li>
         <li><strong>存储空间不足</strong>——手机剩余空间过小，Telegram无法正常写入数据</li>
@@ -145,13 +145,15 @@
       <p>确保手机系统和Telegram都是最新版本。Telegram Android 10.14.0+修复了多个已知崩溃问题。</p>
 
       <h2>四、注意事项</h2>
-      <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
+      <ul>
         <li>频繁掉线不一定是Telegram的问题，先确认其他App是否也断网</li>
         <li>异地验证是安全功能，不建议尝试绕过，接受验证即可</li>
         <li>清除Telegram数据前确认聊天记录已云同步</li>
         <li>如果Telegram在某个WiFi下频繁断线，切换到移动数据测试是否正常</li>
         <li>超过6个月未使用的设备会被自动注销登录状态，这是正常机制</li>
       </ul>
+
+      <div class="divider-text"><span>还有问题？</span></div>
 
       <h2>五、常见问题</h2>
       <div style="background:#f8f9fa;border-radius:12px;padding:24px;margin:16px 0">
