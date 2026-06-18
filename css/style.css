@@ -886,3 +886,46 @@ article td {
 article tr:nth-child(even) {
   background: var(--gray-50);
 }
+
+/* ===== Article Component Styles ===== */
+.lead-paragraph {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--gray-800);
+  margin-bottom: 24px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #F5F7FA 0%, #EEF1F5 100%);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--blue);
+}
+
+.article-meta {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-bottom: 28px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.platform-label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 16px 0 8px;
+}
+.platform-label.android {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+.platform-label.ios {
+  background: #F3E5F5;
+  color: #7B1FA2;
+}
+
+.meta-text {
+  color: var(--text-light);
+  font-size: 14px;
+}
