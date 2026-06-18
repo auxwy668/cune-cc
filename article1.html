@@ -67,7 +67,7 @@
   <div class="container" style="max-width:800px">
     <article>
       <h1>Telegram登录一直转圈怎么处理，手机本地设置排查步骤</h1>
-      <div style="color:#5F6368;font-size:14px;margin-bottom:28px">
+      <div class="article-meta">
         <span>分类：登录转圈修复</span> · <span>更新：2026年6月18日</span>
       </div>
 
@@ -77,11 +77,11 @@
       </div>
 
 
-      <p style="font-size:17px;line-height:1.9;color:#3C4043;margin-bottom:24px">小李上周换了张新SIM卡，打开Telegram输入手机号后，页面就一直转圈，等了5分钟还是那个加载动画。WiFi信号满格，微信、抖音都正常，唯独Telegram死活进不去。他甚至怀疑是不是账号被盗了——其实，这种情况在Telegram用户中非常普遍，90%以上都是手机本地设置的问题，跟账号本身无关。本文将从最常见的原因开始，一步步教你排查并解决登录转圈。</p>
+      <p class="lead-paragraph">小李上周换了张新SIM卡，打开Telegram输入手机号后，页面就一直转圈，等了5分钟还是那个加载动画。WiFi信号满格，微信、抖音都正常，唯独Telegram死活进不去。他甚至怀疑是不是账号被盗了——其实，这种情况在Telegram用户中非常普遍，90%以上都是手机本地设置的问题，跟账号本身无关。本文将从最常见的原因开始，一步步教你排查并解决登录转圈。</p>
 
       <h2>一、为什么登录会一直转圈？问题概述</h2>
       <p>Telegram登录时需要连接服务器验证手机号，如果连接不上或者连接超时，页面就会一直显示加载中（转圈）。常见原因有以下几类：</p>
-      <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
+      <ul>
         <li><strong>网络连接不稳定</strong>——WiFi或移动数据信号弱、断流，或者当前网络通道无法到达Telegram服务器</li>
         <li><strong>DNS解析失败</strong>——运营商DNS无法正确解析Telegram服务器地址，请求根本没发出去</li>
         <li><strong>客户端缓存出错</strong>——旧数据干扰了新的登录请求，Telegram读到了过期的凭证</li>
@@ -102,28 +102,30 @@
 
       <h2>三、分步修复</h2>
 
-      <h3>步骤1：切换网络连接</h3>
-      <p>这是最简单也最有效的一步。如果你用的是WiFi，切换到移动数据试试；反过来也一样。有时候某个网络通道就是连不上Telegram服务器，换一个就好了。</p>
-      <p><strong>Android操作</strong>（以Android 14为例）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <div class="step-box" data-step="1">
+        <h4>切换网络连接</h4>
+        <p>这是最简单也最有效的一步。如果你用的是WiFi，切换到移动数据试试；反过来也一样。有时候某个网络通道就是连不上Telegram服务器，换一个就好了。</p>
+      <p class="platform-label android">📱 Android操作</p>
+      <ol>
         <li>从屏幕顶部下拉，打开快捷设置面板</li>
         <li>点击WiFi图标，关闭WiFi</li>
         <li>确认移动数据已开启（图标亮起）</li>
         <li>回到桌面，重新打开Telegram，输入手机号登录</li>
       </ol>
-      <p>如果移动数据也不行，试试开关飞行模式：打开飞行模式 → 等10秒 → 关闭飞行模式，让手机重新建立网络连接。</p>
-      <p><strong>iOS操作</strong>（以iOS 17为例）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <div class="tip-box"><strong>💡 快速重置网络</strong>如果移动数据也不行，试试开关飞行模式：打开飞行模式 → 等10秒 → 关闭飞行模式，让手机重新建立网络连接。</div>
+      <p class="platform-label ios">🍎 iOS操作</p>
+      <ol>
         <li>从屏幕右上角下拉，打开控制中心</li>
         <li>点击WiFi按钮，关闭WiFi</li>
         <li>确认蜂窝数据已开启</li>
         <li>回到桌面重新打开Telegram尝试登录</li>
       </ol>
-
-      <h3>步骤2：修改DNS设置</h3>
-      <p>有时候是运营商的DNS把Telegram的域名解析到了错误的地址。手动改成公共DNS可以解决这个问题。</p>
-      <p><strong>Android操作</strong>（Android 10及以上）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      </div>
+<div class="step-box" data-step="2">
+        <h4>修改DNS设置</h4>
+        <p>有时候是运营商的DNS把Telegram的域名解析到了错误的地址。手动改成公共DNS可以解决这个问题。</p>
+      <p class="platform-label android">📱 Android操作</p>
+      <ol>
         <li>打开「设置」→ 点击「网络和互联网」</li>
         <li>点击「Wi-Fi」→ 长按当前已连接的WiFi名称</li>
         <li>选择「修改网络」→ 勾选「高级选项」</li>
@@ -131,8 +133,8 @@
         <li>在DNS 1中填入 <code>8.8.8.8</code>，DNS 2中填入 <code>1.1.1.1</code></li>
         <li>点击「保存」，然后重新打开Telegram登录</li>
       </ol>
-      <p><strong>iOS操作</strong>（iOS 15及以上）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <p class="platform-label ios">🍎 iOS操作</p>
+      <ol>
         <li>打开「设置」→ 点击「无线局域网」</li>
         <li>点击当前已连接WiFi右侧的「ⓘ」图标</li>
         <li>下滑找到「配置DNS」，点击进入</li>
@@ -140,41 +142,45 @@
         <li>点击「添加服务器」，依次添加 <code>8.8.8.8</code> 和 <code>1.1.1.1</code></li>
         <li>点击右上角「存储」，重新打开Telegram登录</li>
       </ol>
-      <p>如果8.8.8.8和1.1.1.1都不行，可以换成国内公共DNS试一试：<code>223.5.5.5</code>（阿里DNS）或 <code>119.29.29.29</code>（腾讯DNS）。</p>
-
-      <h3>步骤3：检查系统时间同步</h3>
-      <p>手机时间偏差过大会导致SSL证书验证失败，Telegram无法建立安全连接。确认你的手机时间设置为自动同步。</p>
+      <div class="tip-box"><strong>💡 DNS选择建议</strong>如果8.8.8.8和1.1.1.1都不行，可以换成国内公共DNS试一试：<code>223.5.5.5</code>（阿里DNS）或 <code>119.29.29.29</code>（腾讯DNS）。</div>
+      </div>
+<div class="step-box" data-step="3">
+        <h4>检查系统时间同步</h4>
+        <p>手机时间偏差过大会导致SSL证书验证失败，Telegram无法建立安全连接。确认你的手机时间设置为自动同步。</p>
       <p><strong>Android</strong>：设置 → 系统 → 日期和时间 → 开启「自动设置时间」和「自动设置时区」</p>
       <p><strong>iOS</strong>：设置 → 通用 → 日期与时间 → 开启「自动设置」</p>
-
-      <h3>步骤4：清除Telegram缓存</h3>
-      <p>缓存数据可能包含过期的登录凭证，导致新的登录请求被卡住。</p>
-      <p><strong>Android操作</strong>（Android 10及以上）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      </div>
+<div class="step-box" data-step="4">
+        <h4>清除Telegram缓存</h4>
+        <p>缓存数据可能包含过期的登录凭证，导致新的登录请求被卡住。</p>
+      <div class="warn-box"><strong>⚠️ 注意</strong><strong>Android操作</strong>（Android 10及以上）：
+      <ol>
         <li>打开「设置」→「应用」→「应用管理」</li>
         <li>在应用列表中找到「Telegram」并点击</li>
         <li>点击「存储」→ 点击「清除缓存」（注意是「清除缓存」而不是「清除数据」，清除数据会删除本地聊天记录）</li>
         <li>清除后返回桌面，重新打开Telegram</li>
       </ol>
-      <p><strong>iOS操作</strong>（iOS 17）：</p>
-      <ol style="margin:8px 0 16px 20px;line-height:2.2;color:#3C4043">
+      <p class="platform-label ios">🍎 iOS操作</p></div>
+      <ol>
         <li>打开Telegram → 点击左上角菜单（三条横线）</li>
         <li>进入「设置」→「数据和存储」→「存储用量」</li>
         <li>点击「清除Telegram缓存」→ 确认清除</li>
         <li>返回登录页面重试</li>
       </ol>
-
-      <h3>步骤5：更新或重装Telegram</h3>
-      <p>如果上面几步都不管用，可能是版本问题。Telegram Android 10.14.0及iOS 10.14.1之后的版本修复了多项连接问题，请确保你使用的是最新版本。</p>
+      </div>
+<div class="step-box" data-step="5">
+        <h4>更新或重装Telegram</h4>
+        <p>如果上面几步都不管用，可能是版本问题。Telegram Android 10.14.0及iOS 10.14.1之后的版本修复了多项连接问题，请确保你使用的是最新版本。</p>
       <p><strong>Android</strong>：打开Google Play商店 → 搜索Telegram → 点击「更新」。如果没有Google Play，也可以从官方网站下载最新APK。</p>
       <p><strong>iOS</strong>：打开App Store → 右上角头像 → 下拉刷新 → 找到Telegram点击「更新」。</p>
       <p>如果更新后仍然转圈，可以尝试卸载重装。卸载前确认你的聊天记录已经同步到云端（Telegram默认云同步），否则卸载后本地聊天记录会丢失。</p>
-
-      <h3>步骤6：尝试其他设备登录</h3>
-      <p>如果手机上一直转圈，试试在电脑端（Windows/Mac客户端或网页版）登录同一个账号。如果电脑端能登录，说明是手机端的网络或设置问题；如果电脑端也转圈，可能是账号本身的问题，需要联系Telegram官方。</p>
-
-      <h2>四、注意事项</h2>
-      <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
+      </div>
+<div class="step-box" data-step="6">
+        <h4>尝试其他设备登录</h4>
+        <p>如果手机上一直转圈，试试在电脑端（Windows/Mac客户端或网页版）登录同一个账号。如果电脑端能登录，说明是手机端的网络或设置问题；如果电脑端也转圈，可能是账号本身的问题，需要联系Telegram官方。</p>
+      </div>
+<h2>四、注意事项</h2>
+      <ul>
         <li>不要反复点击登录按钮，频繁请求可能触发FLOOD_WAIT限制，等待时间会越来越长</li>
         <li>清除缓存前先确认聊天记录已云同步，避免丢失重要消息</li>
         <li>修改DNS后如果其他App上网变慢，可以改回自动获取</li>
@@ -182,6 +188,8 @@
         <li>换SIM卡后如果移动数据转圈，先检查APN设置是否正确：设置 → 移动网络 → 接入点名称（APN），确保有可用的APN配置</li>
         <li>如果使用的是企业WiFi或校园网，可能存在端口限制，切换到移动数据测试</li>
       </ul>
+
+      <div class="divider-text"><span>还有问题？</span></div>
 
       <h2>五、常见问题</h2>
       <div style="background:#f8f9fa;border-radius:12px;padding:24px;margin:16px 0">
