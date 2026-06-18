@@ -57,15 +57,16 @@ document.addEventListener('DOMContentLoaded', function() {
 // Article TOC Generator - auto-generates TOC from H2/H3 headings
 (function() {
   function generateTOC() {
-    var articleBody = document.querySelector(".article-body");
+    var articleBody = document.querySelector("article");
     if (!articleBody) return;
+    console.log("[TOC] Found article tag:", articleBody);
 
     // Find all H2 and H3 headings
     var headings = articleBody.querySelectorAll("h2, h3");
     if (headings.length < 2) return; // Don't show TOC if less than 2 headings
 
     // Find the TOC container (try multiple IDs)
-    var tocList = document.querySelector('.article-toc ul') || document.querySelector('#toc-list');
+    var tocList = document.querySelector(".article-toc ul");
     if (!tocList) return;
 
     // Ensure all headings have IDs
