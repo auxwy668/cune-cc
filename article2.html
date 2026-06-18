@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TG账号登录失败常见原因与对应修复方案</title>
+<meta name="description" content="Telegram登录失败怎么办？FLOOD_WAIT、NETWORK_ERROR等报错代码含义解析，针对不同原因提供修复方案。">
+<meta name="keywords" content="TG登录失败,telegram登录报错,telegram登录错误代码">
+<link rel="canonical" href="https://cune.cc/article2.html">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "TG账号登录失败常见原因与对应修复方案",
+  "datePublished": "2026-06-18",
+  "dateModified": "2026-06-18",
+  "author": {"@type": "Organization", "name": "TG登录报错排查"}
+}
+</script>
+</head>
+<body>
+
+<header>
+<div class="container header-inner">
+  <a href="index.html" class="logo"><div class="logo-icon">TG</div>TG登录报错排查</a>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="category.html?cat=spin">登录转圈修复</a>
+    <a href="category.html?cat=fail" class="active">登录失败排查</a>
+    <a href="category.html?cat=sms">验证码异常</a>
+    <a href="category.html?cat=verify">账号验证教程</a>
+    <a href="category.html?cat=faq">登录FAQ</a>
+  </nav>
+</div>
+</header>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">首页</a><span>›</span><a href="category.html?cat=fail">登录失败排查</a><span>›</span>TG账号登录失败常见原因
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="max-width:800px">
+    <article>
+      <h1>TG账号登录失败常见原因与对应修复方案</h1>
+      <div style="color:#5F6368;font-size:14px;margin-bottom:28px">
+        <span>分类：登录失败排查</span> · <span>更新：2026年6月18日</span>
+      </div>
+
+      <p style="font-size:17px;line-height:1.9;color:#3C4043;margin-bottom:24px">跟单纯的转圈不同，登录失败通常会弹出一个错误提示，告诉你哪里出了问题。但那些英文错误代码看着一头雾水？别担心，我帮你把每种报错的原因和解决办法都整理好了。</p>
+
+      <h2>一、常见登录失败错误代码解析</h2>
+
+      <h3>1. FLOOD_WAIT</h3>
+      <p><strong>含义</strong>：你短时间内尝试登录太频繁，Telegram暂时限制了你的请求。</p>
+      <p><strong>修复</strong>：页面通常会显示一个等待秒数（比如FLOOD_WAIT_120表示等120秒）。等够时间后再尝试登录，期间不要反复点击。如果等完还是报这个错，再等一轮，每轮间隔加长。</p>
+
+      <h3>2. NETWORK_ERROR / CONNECTION_FAILED</h3>
+      <p><strong>含义</strong>：你的手机无法连接到Telegram服务器。</p>
+      <p><strong>修复</strong>：跟转圈的排查思路一样——先切换网络（WiFi↔移动数据），再试改DNS（8.8.8.8 / 1.1.1.1），最后清除缓存重试。详细步骤参考<a href="article1.html">登录转圈修复教程</a>。</p>
+
+      <h3>3. PHONE_NUMBER_INVALID</h3>
+      <p><strong>含义</strong>：手机号格式不正确。</p>
+      <p><strong>修复</strong>：确认手机号前加了国际区号（中国大陆是+86），号码中间不要有空格或横杠。比如正确格式：<code>+8613800138000</code>。</p>
+
+      <h3>4. PHONE_NUMBER_BANNED</h3>
+      <p><strong>含义</strong>：这个手机号被Telegram封禁了，通常是因为之前用这个号注册的账号违反了使用条款。</p>
+      <p><strong>修复</strong>：发送邮件到 <code>recover@telegram.org</code>，说明你的手机号和情况，申请解封。处理时间通常1-7天。期间不要重复发送邮件。</p>
+
+      <h2>二、按错误类型对应的修复方案</h2>
+
+      <div style="background:#f8f9fa;border-radius:12px;padding:24px;margin:16px 0">
+        <p><strong>网络类错误</strong>（NETWORK_ERROR、CONNECTION_FAILED、TIMEOUT）</p>
+        <p style="margin-bottom:12px">→ 切换网络 → 改DNS → 清缓存 → 重装App</p>
+        <p><strong>频率限制类错误</strong>（FLOOD_WAIT）</p>
+        <p style="margin-bottom:12px">→ 等待指定时间 → 不要重复操作 → 等待期间关闭App</p>
+        <p><strong>账号类错误</strong>（PHONE_NUMBER_BANNED、ACCOUNT_DISABLED）</p>
+        <p style="margin-bottom:12px">→ 发邮件到recover@telegram.org → 说明情况 → 等待1-7天</p>
+        <p><strong>格式类错误</strong>（PHONE_NUMBER_INVALID）</p>
+        <p>→ 检查区号 → 去掉空格横杠 → 重新输入</p>
+      </div>
+
+      <h2>三、注意事项</h2>
+      <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
+        <li>遇到FLOOD_WAIT一定不要反复重试，越试等待时间越长</li>
+        <li>手机号被封不代表你的手机有问题，换个号注册新账号也行</li>
+        <li>如果是刚卸载重装后登录失败，等待几分钟再试，服务器端可能还没完全注销旧会话</li>
+      </ul>
+
+      <h2>四、常见问题</h2>
+      <div style="background:#f8f9fa;border-radius:12px;padding:24px;margin:16px 0">
+        <p><strong>Q：登录失败但没有显示错误代码？</strong></p>
+        <p style="margin-bottom:16px">有些版本只会弹出一个通用的"登录失败"提示。这种情况建议更新到最新版Telegram，新版本会显示更详细的错误信息。</p>
+        <p><strong>Q：FLOOD_WAIT要等多久？</strong></p>
+        <p style="margin-bottom:16px">看具体数字。FLOOD_WAIT_60就是等60秒，FLOOD_WAIT_86400就是等24小时。最长的限制一般不超过24小时。</p>
+        <p><strong>Q：邮件申请解封多久能回复？</strong></p>
+        <p>通常1-7个工作日。如果超过7天没回复，可以再发一封，但不要频繁发。</p>
+      </div>
+
+      <div style="background:#FFF3E0;border-left:4px solid #FF9800;padding:16px 20px;border-radius:0 8px 8px 0;margin:28px 0;font-size:14px;color:#5F6368">
+        <strong>📌 免责声明：</strong>本站内容仅为海外合规地区软件功能科普教程，不提供网络访问相关方案，不引导任何违规操作，内容仅供学习参考。
+      </div>
+
+      <div style="margin-top:36px;padding-top:24px;border-top:1px solid #e8eaed">
+        <h3>相关教程</h3>
+        <ul style="margin:12px 0 0 20px;line-height:2.2">
+          <li><a href="article1.html">Telegram登录一直转圈怎么处理</a></li>
+          <li><a href="article3.html">Telegram收不到短信验证码，客户端自查解决办法</a></li>
+          <li><a href="article5.html">Telegram频繁掉线、异地登录验证常见问题汇总</a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer>
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>TG登录报错排查</h3>
+      <p>专注解决Telegram登录转圈、登录失败、验证码异常等常见问题。本站与 Telegram 官方无关，内容仅供学习参考。</p>
+    </div>
+    <div class="footer-col"><h4>排查分类</h4><ul><li><a href="category.html?cat=spin">登录转圈修复</a></li><li><a href="category.html?cat=fail">登录失败排查</a></li><li><a href="category.html?cat=sms">验证码异常解决</a></li><li><a href="category.html?cat=verify">账号验证教程</a></li><li><a href="category.html?cat=faq">登录常见FAQ</a></li></ul></div>
+    <div class="footer-col"><h4>关于本站</h4><ul><li><a href="disclaimer.html">免责声明</a></li><li><a href="privacy.html">隐私政策</a></li><li><a href="copyright.html">版权声明</a></li><li><a href="contact.html">联系我们</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 TG登录报错排查 · 内容仅供学习参考</span><span>本站与 Telegram 官方无关</span></div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
