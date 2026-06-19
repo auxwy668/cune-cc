@@ -97,6 +97,28 @@
   </div>
 </section>
 
+
+<section class="section" id="overview" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">问题解析</div>
+      <h2>Telegram登录失败的常见类型</h2>
+      <p class="section-sub">不同的报错代码对应完全不同的原因，别搞混了</p>
+    </div>
+    <div class="guide-box" style="max-width:800px;margin:0 auto;padding:24px">
+      <p>Telegram登录失败跟登录转圈是两种不同的表现——转圈是没有报错只是卡住，而<strong>登录失败会弹出一个具体的英文提示</strong>，告诉你为什么进不去。搞懂这些报错代码的含义，才能对症下药。</p>
+      <p>最常见的登录失败类型可以分成以下四类：</p>
+      <ul style="line-height:2">
+        <li><strong>手机号被限制</strong>：提示 <code>PHONE_NUMBER_BANNED</code>，意味着这个号码被Telegram服务器禁止登录。原因可能是号码段被标记为高风险、该号码之前有违规记录，或者该号码与多个被封账号关联过。这种情况需要发邮件到Telegram官方申诉，但成功率不稳定。</li>
+        <li><strong>频率限制</strong>：提示 <code>FLOOD_WAIT_X</code>，X是等待秒数。出现这个说明你在短时间内请求了太多次验证码或登录尝试，Telegram的防滥用系统临时限制了你的请求频率。千万不要重复点击——等待的时间会越刷越长，老老实实等足X秒再试。</li>
+        <li><strong>两步验证拦截</strong>：输入验证码后提示需要输入密码。这是因为账号开启了Telegram的两步验证（2FA），你需要输入之前设置好的登录密码。如果忘了密码，可以通过绑定的邮箱找回。</li>
+        <li><strong>网络连接错误</strong>：提示 <code>NETWORK_ERROR</code> 或 <code>CONNECTION_ERROR</code>，属于网络层面的问题，处理方式类似登录转圈（切换网络、改DNS、清缓存）。</li>
+      </ul>
+      <p>下面的文章针对每种失败类型提供了详细步骤，建议先确认自己的报错代码再点进去看对应方案。</p>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="articles" style="background:#fff;">
   <div class="container">
     <div class="section-header">
@@ -115,6 +137,38 @@
     </div>
   </div>
 </section>
+
+
+<section class="section" id="error-ref" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">速查表</div>
+      <h2>TG登录失败错误代码速查</h2>
+      <p class="section-sub">遇到不认识的代码？在这里快速定位</p>
+    </div>
+    <div class="guide-box" style="max-width:800px;margin:0 auto;padding:24px">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead>
+          <tr style="background:#9C27B0;color:#fff">
+            <th style="padding:10px 14px;text-align:left">错误代码</th>
+            <th style="padding:10px 14px;text-align:left">含义</th>
+            <th style="padding:10px 14px;text-align:left">解决方案</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e0e0e0"><td style="padding:10px 14px"><code>PHONE_NUMBER_BANNED</code></td><td style="padding:10px 14px">手机号被封禁</td><td style="padding:10px 14px">发邮件到 recover@telegram.org 申诉</td></tr>
+          <tr style="border-bottom:1px solid #e0e0e0"><td style="padding:10px 14px"><code>PHONE_NUMBER_INVALID</code></td><td style="padding:10px 14px">手机号格式无效</td><td style="padding:10px 14px">确认国际区号正确，去掉空格和横杠</td></tr>
+          <tr style="border-bottom:1px solid #e0e0e0"><td style="padding:10px 14px"><code>FLOOD_WAIT_X</code></td><td style="padding:10px 14px">请求频率过高</td><td style="padding:10px 14px">等待X秒后再试，不要反复点</td></tr>
+          <tr style="border-bottom:1px solid #e0e0e0"><td style="padding:10px 14px"><code>PASSWORD_HASH_INVALID</code></td><td style="padding:10px 14px">两步验证密码错误</td><td style="padding:10px 14px">通过绑定邮箱重置密码</td></tr>
+          <tr style="border-bottom:1px solid #e0e0e0"><td style="padding:10px 14px"><code>NETWORK_ERROR</code></td><td style="padding:10px 14px">网络连接失败</td><td style="padding:10px 14px">切换网络、改DNS、清缓存</td></tr>
+          <tr style="border-bottom:1px solid #e0e0e0"><td style="padding:10px 14px"><code>API_ID_INVALID</code></td><td style="padding:10px 14px">客户端版本过期</td><td style="padding:10px 14px">到官网下载最新版Telegram</td></tr>
+          <tr><td style="padding:10px 14px"><code>PHONE_CODE_EXPIRED</code></td><td style="padding:10px 14px">验证码已过期</td><td style="padding:10px 14px">重新请求发送验证码</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 
 <section class="section faq-section" id="faq">
   <div class="container">
