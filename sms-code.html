@@ -97,6 +97,29 @@
   </div>
 </section>
 
+
+<section class="section" id="overview" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">问题解析</div>
+      <h2>Telegram验证码收不到的6大原因</h2>
+      <p class="section-sub">短信验证码是TG登录的第一道关卡，卡在这里连门都进不去</p>
+    </div>
+    <div class="guide-box" style="max-width:800px;margin:0 auto;padding:24px">
+      <p>Telegram的验证码通过短信发送到注册手机号，但由于涉及国际短信路由，收不到验证码的情况比普通App多得多。以下是最常见的6个原因：</p>
+      <ul style="line-height:2">
+        <li><strong>1. 手机号格式不对</strong>——最常见的低级错误。Telegram默认显示的是你当前地区的国际区号（中国大陆是+86），如果你的手机号实际归属其他地区，或者号码前面带了0、空格、横杠等多余字符，短信就会发到你根本没在用的号码上。仔细检查区号和号码部分是否正确。</li>
+        <li><strong>2. 运营商拦截国际短信</strong>——部分运营商会默认关闭国际短信接收功能，尤其是虚拟运营商和校园套餐。这种情况需要联系运营商客服开通。有些运营商的拦截是静默的，你完全不知道短信被拦截了，但运营商的短信中心确实收到了并丢弃了。</li>
+        <li><strong>3. 手机信号不稳定</strong>——在地下室、电梯、偏远地区等信号弱的地方，国际短信的送达率会大幅降低。走到信号满格的地方重新请求是最简单有效的办法。</li>
+        <li><strong>4. 短信被安全软件拦截</strong>——手机安全管家、360、腾讯手机管家等App的短信过滤功能会把国际号码的短信识别为骚扰短信自动归入垃圾箱。去短信App的垃圾箱或拦截记录里翻一翻。</li>
+        <li><strong>5. Telegram服务端拥塞</strong>——TG服务器偶尔会出现短信发送延迟或故障，尤其是在用户量突然激增的时候。这时所有人都会受影响，不是单单针对你，等几分钟再试或者改用语音验证码即可。</li>
+        <li><strong>6. 短时间内请求太多验证码</strong>——如果1小时内反复点发送验证码，Telegram会触发频率限制，暂停对该号码发送任何验证码。这时候需要等待1至24小时再试，期间不要再次请求。</li>
+      </ul>
+      <p>下面的教程文章会详细展开每个原因的排查方法，按顺序查一遍基本都能解决问题。</p>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="articles" style="background:#fff;">
   <div class="container">
     <div class="section-header">
@@ -115,6 +138,28 @@
     </div>
   </div>
 </section>
+
+
+<section class="section" id="quick-fix" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">快速排查</div>
+      <h2>验证码收不到：5分钟自检流程</h2>
+      <p class="section-sub">别急，按这个顺序一个个检查，90%的情况在第三步之前就解决了</p>
+    </div>
+    <div class="guide-box" style="max-width:800px;margin:0 auto;padding:24px">
+      <div class="guide-steps">
+        <div class="gs"><div class="gs-num">1</div><div class="gs-text"><h4>核对手机号：区号+号码</h4><p>确认右上角国家区号正确（中国大陆选+86），手机号部分去掉前面的0和任何空格横杠。很多人在这里就搞错了。</p></div></div>
+        <div class="gs"><div class="gs-num">2</div><div class="gs-text"><h4>检查短信垃圾箱</h4><p>打开手机默认短信App→垃圾短信或拦截短信→查找Telegram或发件人为国际号码的短信。iPhone用户进信息→垃圾信息查看。</p></div></div>
+        <div class="gs"><div class="gs-num">3</div><div class="gs-text"><h4>切换到移动数据网络</h4><p>关掉WiFi用4G或5G信号。信号不满格的话走到室外开阔处。这一步经常能解决看似无解的验证码延迟问题。</p></div></div>
+        <div class="gs"><div class="gs-num">4</div><div class="gs-text"><h4>等2分钟点语音验证码</h4><p>短信请求发出后等待2分钟左右，登录页面会出现通过电话接收验证码的选项。语音验证码是机器来电直接念数字，绕过短信路由，成功率更高。</p></div></div>
+        <div class="gs"><div class="gs-num">5</div><div class="gs-text"><h4>联系运营商开通国际短信</h4><p>拨打运营商客服电话（移动10086、联通10010、电信10000），说需要开通国际短信接收服务。</p></div></div>
+        <div class="gs"><div class="gs-num">6</div><div class="gs-text"><h4>等待几小时再试</h4><p>如果已经多次请求验证码，TG的频率限制机制可能已经激活。停止一切操作，等3至6小时后再重新请求。</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="section faq-section" id="faq">
   <div class="container">
