@@ -97,6 +97,29 @@
   </div>
 </section>
 
+
+<section class="section" id="overview" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">问题解析</div>
+      <h2>Telegram登录转圈到底卡在哪？</h2>
+      <p class="section-sub">先搞清楚原因，再对症下药，避免盲目试错浪费时间</p>
+    </div>
+    <div class="guide-box" style="max-width:800px;margin:0 auto;padding:24px">
+      <p>Telegram登录转圈——输入手机号点下一步之后，屏幕上只剩一个不停旋转的加载图标，短则半分钟，长则十几分钟毫无反应。很多人以为这是账号被限制了，反复退出重试反而越搞越糟。实际上绝大多数登录转圈问题跟账号状态无关，是<strong>客户端到Telegram服务器的通信链路卡住了</strong>。</p>
+      <p>具体来说，可能卡在以下几个环节：</p>
+      <ul style="line-height:2">
+        <li><strong>DNS解析失败</strong>——运营商的默认DNS有时无法正确解析Telegram的服务器域名，客户端不知道该连哪个IP，自然就一直转圈等待。这是最常见的原因，换一个公共DNS（如8.8.8.8或114.114.114.114）通常能直接解决。</li>
+        <li><strong>网络环境限制</strong>——WiFi网络的路由器防火墙或运营商策略可能拦截了Telegram的通信端口，但手机移动数据通常没有这个限制。所以很多人发现切到4G/5G就秒进。</li>
+        <li><strong>客户端缓存损坏</strong>——Telegram的本地缓存文件如果损坏，会导致连接参数错乱。清除缓存不会丢聊天记录，但能重置连接状态。</li>
+        <li><strong>旧版本兼容性问题</strong>——Telegram服务端会逐步淘汰过旧的客户端版本，如果你的App太久没更新，可能出现协议不兼容导致连接失败。</li>
+        <li><strong>代理配置冲突</strong>——如果之前配置过代理但代理已失效，客户端会一直尝试通过不可用的代理连接，表现为无限转圈。</li>
+      </ul>
+      <p>下面的教程文章针对每种原因都有对应的解决步骤，建议从第一个开始按顺序排查。</p>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="articles" style="background:#fff;">
   <div class="container">
     <div class="section-header">
@@ -123,6 +146,27 @@
     </div>
   </div>
 </section>
+
+
+<section class="section" id="quickcheck" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">实用清单</div>
+      <h2>转圈问题速查：5分钟自检流程</h2>
+      <p class="section-sub">按优先级从高到低排列，大概率前两步就解决了</p>
+    </div>
+    <div class="guide-box" style="max-width:800px;margin:0 auto;padding:24px">
+      <div class="guide-steps">
+        <div class="gs"><div class="gs-num">1</div><div class="gs-text"><h4>关WiFi开移动数据</h4><p>70%的转圈问题在这一步就解决了。蜂窝网络不存在WiFi路由器的端口限制。</p></div></div>
+        <div class="gs"><div class="gs-num">2</div><div class="gs-text"><h4>改DNS为8.8.8.8</h4><p>Android在WiFi设置→高级→IP设置改为静态→DNS1填8.8.8.8；iOS在WiFi详情→配置DNS改为手动。</p></div></div>
+        <div class="gs"><div class="gs-num">3</div><div class="gs-text"><h4>清除Telegram缓存</h4><p>安卓：设置→应用→Telegram→存储→清除缓存。iOS：因为系统限制，直接卸载重装更快。</p></div></div>
+        <div class="gs"><div class="gs-num">4</div><div class="gs-text"><h4>检查代理设置</h4><p>Telegram设置→数据与存储→代理→关闭所有代理。很多转圈是因为连着一个已经失效的代理。</p></div></div>
+        <div class="gs"><div class="gs-num">5</div><div class="gs-text"><h4>用电脑端Telegram Desktop登录</h4><p>如果手机端不行但电脑端秒进，说明是手机网络环境的问题，账号本身没问题。</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="section faq-section" id="faq">
   <div class="container">
