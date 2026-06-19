@@ -88,7 +88,9 @@
       <p>简单说就是你的手机向Telegram服务器发送了登录请求，但服务器在规定时间内没有回应。就像你打电话对方一直不接，等了30秒你就挂了——这就是超时。</p>
       <p>超时和转圈其实是一个问题的不同阶段：先是转圈（正在尝试连接），然后超时（连接失败，放弃）。所以很多排查方法是通用的，如果你还没看过<a href="telegram-login-spinning-fix.html">登录转圈修复教程</a>，建议先看一下。</p>
 
-      <h2>原因一：网络连接不稳定</h2>
+      
+      <img src="images/telegram-login-timeout-fix/body-1.jpg" alt="Telegram登录超时错误界面示意图" style="max-width:100%;border-radius:8px;margin:20px 0" loading="lazy">
+<h2>原因一：网络连接不稳定</h2>
       <p>这是最常见的原因。WiFi信号弱、移动数据在地下室/电梯里没信号、网络延迟过高，都会导致登录请求在传输过程中超时。</p>
       <p><strong>排查方法</strong>：</p>
       <ul style="margin:12px 0 20px 20px;line-height:2;color:#3C4043">
@@ -110,7 +112,9 @@
       <p>有时候不是你的问题，是Telegram服务器自己挂了。这种情况通常是大面积故障，你可以去社交媒体搜一下"Telegram down"看看有没有其他人也在反馈。</p>
       <p>如果是服务端故障，你只能等。一般几十分钟到几小时就会恢复。期间不要反复尝试登录，否则可能触发FLOOD_WAIT限制，到时候服务器恢复了你也登不了。关于FLOOD_WAIT的详细说明可以看<a href="telegram-login-fail-fix.html">登录失败排查教程</a>。</p>
 
-      <h2>原因四：客户端版本过旧</h2>
+      
+      <img src="images/telegram-login-timeout-fix/body-2.jpg" alt="Telegram网络排查修复示意图" style="max-width:100%;border-radius:8px;margin:20px 0" loading="lazy">
+<h2>原因四：客户端版本过旧</h2>
       <p>Telegram会不定期更新连接协议，旧版本可能使用了已废弃的连接方式，导致无法和服务器正常通信。这时候的表现就是：能上网，DNS也正常，但登录就是超时。</p>
       <p><strong>解决方法</strong>：去应用商店更新到最新版Telegram。如果商店里没有更新，卸载后从官方渠道重新安装。官方下载链接可以在我们<a href="index.html">首页</a>找到。</p>
 
@@ -131,7 +135,9 @@
       <p>如果你试了以上所有方法还是超时，可以在<a href="login-spinning.html">登录转圈分类</a>看看更多排查方案，或者去<a href="login-faq.html">登录FAQ</a>找找有没有类似情况的解答。有时候问题可能出在验证码环节，那可以看看<a href="telegram-sms-code-not-received.html">收不到验证码</a>的解决方法。</p>
 
 
-      <div style="background:#FFF3E0;border-left:4px solid #FF9800;padding:16px 20px;border-radius:0 8px 8px 0;margin:28px 0;font-size:14px;color:#5F6368">
+      
+      <img src="images/telegram-login-timeout-fix/body-3.jpg" alt="Telegram登录成功修复完成示意图" style="max-width:100%;border-radius:8px;margin:20px 0" loading="lazy">
+<div style="background:#FFF3E0;border-left:4px solid #FF9800;padding:16px 20px;border-radius:0 8px 8px 0;margin:28px 0;font-size:14px;color:#5F6368">
         <strong>📌 免责声明：</strong>本站内容仅为海外合规地区软件功能科普教程，不提供网络访问相关方案，不引导任何违规操作，内容仅供学习参考。
       </div>
 
