@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cune.cc/</loc><priority>1.0</priority><changefreq>daily</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/article1.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/article2.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/article3.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/article4.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/article5.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/category.html</loc><priority>0.7</priority><changefreq>weekly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/disclaimer.html</loc><priority>0.3</priority><changefreq>yearly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/privacy.html</loc><priority>0.3</priority><changefreq>yearly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/copyright.html</loc><priority>0.3</priority><changefreq>yearly</changefreq><lastmod>2026-06-18</lastmod></url>
-  <url><loc>https://cune.cc/contact.html</loc><priority>0.3</priority><changefreq>yearly</changefreq><lastmod>2026-06-18</lastmod></url>
+  <url><loc>https://cune.cc/</loc><priority>1.0</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/login-spinning.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/login-fail.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/sms-code.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/account-verify.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/login-faq.html</loc><priority>0.9</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-login-spinning-fix.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-login-fail-fix.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-sms-code-not-received.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-account-verify-guide.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-login-faq.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-two-step-verification.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-login-security-tips.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-login-device-management.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-session-logout-remote.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/telegram-login-timeout-fix.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/disclaimer.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/privacy.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/copyright.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
+  <url><loc>https://cune.cc/contact.html</loc><priority>0.8</priority><changefreq>weekly</changefreq><lastmod>2026-06-19</lastmod></url>
 </urlset>
